@@ -7,17 +7,9 @@ A lightweight, educational database management system (DBMS) built in Java, impl
 - [Overview](#overview)
 - [Features](#features)
 - [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
 - [Usage](#usage)
-  - [Supported Commands](#supported-commands)
-  - [Examples](#examples)
 - [Project Structure](#project-structure)
 - [Technical Implementation](#technical-implementation)
-- [Team](#team)
-- [License](#license)
 
 ## 🎯 Overview
 
@@ -77,135 +69,27 @@ This project serves as an educational tool to understand the internal workings o
 | `DeleteTable.java` | Record deletion handler |
 | `Index.java` | Index creation and management |
 
-## 🚀 Getting Started
+##  Usage
 
-### Prerequisites
+### Table Operations
+- `CREATE TABLE`
+- `DROP TABLE`
+- `SHOW TABLES`
 
-- Java Development Kit (JDK) 8 or higher
-- Command line terminal (Windows PowerShell, CMD, or Unix terminal)
+### Data Manipulation
+- `INSERT INTO`
+- `SELECT`
+- `UPDATE`
+- `DELETE`
 
-### Installation
+### Index Operations
+- `CREATE INDEX`
+- `DROP INDEX`
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/pvsailatha711/PalladiumSQL.git
-   cd PalladiumSQL
-   ```
-
-2. **Compile the Java files**
-   ```bash
-   javac *.java
-   ```
-
-### Running the Application
-
-```bash
-java DavisBase
-```
-
-You should see the welcome screen:
-```
---------------------------------------------------------------------------------
-Welcome to DavisBaseLite
-DavisBase Version v1.3
-Team Palladium
-
-Type "help;" to display supported commands.
---------------------------------------------------------------------------------
-PalladiumSql>
-```
-
-## 💻 Usage
-
-### Supported Commands
-
-#### Table Operations
-```sql
--- Create a new table
-CREATE TABLE table_name (column1 datatype, column2 datatype, ...);
-
--- Show all tables
-SHOW TABLES;
-
--- Drop a table
-DROP TABLE table_name;
-```
-
-#### Data Manipulation
-```sql
--- Insert a record
-INSERT INTO table_name VALUES (value1, value2, ...);
-
--- Select all records
-SELECT * FROM table_name;
-
--- Select with condition
-SELECT * FROM table_name WHERE column_name = value;
-
--- Update records
-UPDATE table_name SET column_name = value WHERE condition;
-
--- Delete records
-DELETE FROM table_name WHERE condition;
-```
-
-#### Index Operations
-```sql
--- Create an index
-CREATE INDEX index_name ON table_name (column_name);
-
--- Drop an index
-DROP INDEX index_name;
-```
-
-#### System Commands
-```sql
--- Display help
-HELP;
-
--- Show version
-VERSION;
-
--- Exit the program
-EXIT;
-```
-
-### Examples
-
-#### Creating a Table
-```sql
-PalladiumSql> CREATE TABLE students (id INT, name TEXT, age INT, gpa REAL);
-```
-
-#### Inserting Data
-```sql
-PalladiumSql> INSERT INTO students VALUES (1, 'John Doe', 20, 3.5);
-PalladiumSql> INSERT INTO students VALUES (2, 'Jane Smith', 21, 3.8);
-```
-
-#### Querying Data
-```sql
--- Select all records
-PalladiumSql> SELECT * FROM students;
-
--- Select with condition
-PalladiumSql> SELECT * FROM students WHERE age > 20;
-```
-
-#### Creating an Index
-```sql
-PalladiumSql> CREATE INDEX idx_student_id ON students (id);
-```
-
-#### Updating Records
-```sql
-PalladiumSql> UPDATE students SET gpa = 3.9 WHERE id = 2;
-```
-
-#### Deleting Records
-```sql
-PalladiumSql> DELETE FROM students WHERE id = 1;
-```
+### System Commands
+- `HELP`
+- `VERSION`
+- `EXIT`
 
 ## 📁 Project Structure
 
@@ -265,35 +149,3 @@ The system implements a B+ tree structure for efficient data retrieval:
 2. **Validation**: Schema and constraint validation
 3. **Execution**: Operation execution using B+ tree navigation
 4. **Result**: Formatted output to console
-
-## 👥 Team
-
-**Team Palladium**
-
-This project was developed as part of a Database Design course at the University of Texas at Dallas.
-
-## 📄 License
-
-This project is based on DavisBase by Chris Irwin Davis.
-
-Original Copyright © 2016 Chris Irwin Davis
-
----
-
-## 🤝 Contributing
-
-This is an educational project. If you'd like to contribute improvements or bug fixes:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
-
-## 📞 Contact
-
-For questions or feedback, please open an issue on the GitHub repository.
-
----
-
-**Note**: This is an educational project designed to demonstrate database concepts. It is not intended for production use.
