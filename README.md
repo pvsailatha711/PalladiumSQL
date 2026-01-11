@@ -2,7 +2,7 @@
 
 A lightweight, educational database management system (DBMS) built in Java, implementing core database functionalities with B+ tree indexing. This project is based on DavisBase and demonstrates fundamental database concepts including storage management, indexing, and SQL query processing.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -11,7 +11,7 @@ A lightweight, educational database management system (DBMS) built in Java, impl
 - [Project Structure](#project-structure)
 - [Technical Implementation](#technical-implementation)
 
-## 🎯 Overview
+## Overview
 
 PalladiumSQL is a simplified relational database management system that implements essential DBMS features including:
 - Custom storage engine with page-based file organization
@@ -22,7 +22,7 @@ PalladiumSQL is a simplified relational database management system that implemen
 
 This project serves as an educational tool to understand the internal workings of database systems, from low-level storage management to high-level query processing.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **Table Management**: Create, drop, and manage database tables
@@ -43,7 +43,7 @@ This project serves as an educational tool to understand the internal workings o
 - `DROP INDEX` - Remove indexes
 - `SHOW TABLES` - List all tables
 
-## 🏗️ Architecture
+## Architecture
 
 ### Storage Layer
 - **Page Size**: 512 bytes per page
@@ -69,7 +69,7 @@ This project serves as an educational tool to understand the internal workings o
 | `DeleteTable.java` | Record deletion handler |
 | `Index.java` | Index creation and management |
 
-##  Usage
+## Usage
 
 ### Table Operations
 - `CREATE TABLE`
@@ -91,7 +91,7 @@ This project serves as an educational tool to understand the internal workings o
 - `VERSION`
 - `EXIT`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 PalladiumSQL/
@@ -118,7 +118,7 @@ PalladiumSQL/
 └── README.md                     # This file
 ```
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Data Types Supported
 - `INT` - Integer values
